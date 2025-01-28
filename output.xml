@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.9.6 on darwin)" generated="2025-01-08T16:47:10.317530" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo" source="/Users/duynv_1499/PycharmProjects/PythonProject/demo.robot">
+<test id="s1-t1" name="Open Google &amp; Verify Google" line="20">
+<kw name="Navigate To Google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-08T16:47:10.442107" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-08T16:47:10.441929" elapsed="13.515934"/>
+</kw>
+<status status="PASS" start="2025-01-08T16:47:10.441270" elapsed="13.517308"/>
+</kw>
+<kw name="Verify Page Contains Google">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-01-08T16:47:23.964101" level="INFO">${Get_title} = Google</msg>
+<var>${Get_title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-01-08T16:47:23.960279" elapsed="0.003855"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Get_title}</arg>
+<arg>Google</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-01-08T16:47:23.964455" elapsed="0.000349"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-08T16:47:23.964912" elapsed="0.088267"/>
+</kw>
+<status status="PASS" start="2025-01-08T16:47:23.959783" elapsed="0.093638"/>
+</kw>
+<status status="PASS" start="2025-01-08T16:47:10.440646" elapsed="13.613075"/>
+</test>
+<doc>My First Test
+This test will Verify Google</doc>
+<status status="PASS" start="2025-01-08T16:47:10.318495" elapsed="13.735971"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
