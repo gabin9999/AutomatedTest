@@ -1,2 +1,2 @@
-# FrenSplitter
-Splling Bills
+# Automated Test
+Automated Test
